@@ -1,0 +1,7 @@
+OneChoice
+Nhung con vat nao sau day biet boi?
+Cho
+Ga
+Meo
+Chim se
+A

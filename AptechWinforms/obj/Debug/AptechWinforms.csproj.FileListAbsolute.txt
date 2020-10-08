@@ -8,3 +8,9 @@ D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.csproj
 D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.exe
 D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.pdb
 D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.Form1.resources
+D:\Working\GitHub\aptech-winforms\AptechWinforms\bin\Debug\Data\1.txt
+D:\Working\GitHub\aptech-winforms\AptechWinforms\bin\Debug\Data\2.txt
+D:\Working\GitHub\aptech-winforms\AptechWinforms\bin\Debug\Data\3.txt
+D:\Working\GitHub\aptech-winforms\AptechWinforms\bin\Debug\Data\4.txt
+D:\Working\GitHub\aptech-winforms\AptechWinforms\bin\Debug\Data\5.txt
+D:\Working\GitHub\aptech-winforms\AptechWinforms\bin\Debug\Data\6.txt
