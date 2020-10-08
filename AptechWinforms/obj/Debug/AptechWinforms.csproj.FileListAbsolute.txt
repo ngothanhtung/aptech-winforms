@@ -1,0 +1,10 @@
+D:\Working\GitHub\aptech-winforms\AptechWinforms\bin\Debug\AptechWinforms.exe.config
+D:\Working\GitHub\aptech-winforms\AptechWinforms\bin\Debug\AptechWinforms.exe
+D:\Working\GitHub\aptech-winforms\AptechWinforms\bin\Debug\AptechWinforms.pdb
+D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.csprojAssemblyReference.cache
+D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.Properties.Resources.resources
+D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.csproj.GenerateResource.cache
+D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.csproj.CoreCompileInputs.cache
+D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.exe
+D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.pdb
+D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.Form1.resources
