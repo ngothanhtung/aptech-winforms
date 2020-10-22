@@ -39,38 +39,28 @@
             System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Year 2", new System.Windows.Forms.TreeNode[] {
             treeNode4,
             treeNode5});
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Java FullStack", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Java Full Stack", new System.Windows.Forms.TreeNode[] {
             treeNode3,
             treeNode6});
             System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Year 1");
             System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Year 2");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode(".NET FullStack", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode(".NET Full Stack", new System.Windows.Forms.TreeNode[] {
             treeNode8,
             treeNode9});
             System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Database", System.Windows.Forms.HorizontalAlignment.Left);
             System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Programming", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Sql Server",
-            "10/01/2020",
-            "12/31/2020",
-            "4"}, 0);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
-            "JSP",
-            "05/05/2020",
-            "12/12/2020",
-            "6"}, -1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AssignmentForm03));
             this.label3 = new System.Windows.Forms.Label();
             this.treeViewCourse = new System.Windows.Forms.TreeView();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.listViewSyllabus = new System.Windows.Forms.ListView();
             this.listViewCourse = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listViewSyllabus = new System.Windows.Forms.ListView();
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -105,13 +95,13 @@
             treeNode6.Name = "Node2";
             treeNode6.Text = "Year 2";
             treeNode7.Name = "Course-Java";
-            treeNode7.Text = "Java FullStack";
+            treeNode7.Text = "Java Full Stack";
             treeNode8.Name = "Node3";
             treeNode8.Text = "Year 1";
             treeNode9.Name = "Node4";
             treeNode9.Text = "Year 2";
             treeNode10.Name = "Course-NET";
-            treeNode10.Text = ".NET FullStack";
+            treeNode10.Text = ".NET Full Stack";
             this.treeViewCourse.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode7,
             treeNode10});
@@ -137,6 +127,16 @@
             this.splitContainer1.SplitterDistance = 266;
             this.splitContainer1.TabIndex = 4;
             // 
+            // listViewSyllabus
+            // 
+            this.listViewSyllabus.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.listViewSyllabus.HideSelection = false;
+            this.listViewSyllabus.Location = new System.Drawing.Point(0, 325);
+            this.listViewSyllabus.Name = "listViewSyllabus";
+            this.listViewSyllabus.Size = new System.Drawing.Size(530, 322);
+            this.listViewSyllabus.TabIndex = 1;
+            this.listViewSyllabus.UseCompatibleStateImageBehavior = false;
+            // 
             // listViewCourse
             // 
             this.listViewCourse.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -153,11 +153,6 @@
             listViewGroup1,
             listViewGroup2});
             this.listViewCourse.HideSelection = false;
-            listViewItem1.Group = listViewGroup1;
-            listViewItem2.Group = listViewGroup2;
-            this.listViewCourse.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2});
             this.listViewCourse.LargeImageList = this.imageList2;
             this.listViewCourse.Location = new System.Drawing.Point(0, 0);
             this.listViewCourse.Name = "listViewCourse";
@@ -182,11 +177,10 @@
             this.columnHeader3.Text = "End date";
             this.columnHeader3.Width = 100;
             // 
-            // imageList1
+            // columnHeader4
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "text_x_csharp.png");
+            this.columnHeader4.Text = "Duration (Weeks)";
+            this.columnHeader4.Width = 100;
             // 
             // imageList2
             // 
@@ -194,20 +188,11 @@
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList2.Images.SetKeyName(0, "text_x_csharp.png");
             // 
-            // columnHeader4
+            // imageList1
             // 
-            this.columnHeader4.Text = "Duration (Weeks)";
-            this.columnHeader4.Width = 100;
-            // 
-            // listViewSyllabus
-            // 
-            this.listViewSyllabus.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.listViewSyllabus.HideSelection = false;
-            this.listViewSyllabus.Location = new System.Drawing.Point(0, 325);
-            this.listViewSyllabus.Name = "listViewSyllabus";
-            this.listViewSyllabus.Size = new System.Drawing.Size(530, 322);
-            this.listViewSyllabus.TabIndex = 1;
-            this.listViewSyllabus.UseCompatibleStateImageBehavior = false;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "text_x_csharp.png");
             // 
             // AssignmentForm03
             // 
