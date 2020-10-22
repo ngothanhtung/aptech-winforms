@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,6 +40,18 @@ namespace AptechWinforms.Assignments
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://aptech-danang.edu.vn");
+        }
+
+
+
+        private void textBoxName_Leave(object sender, EventArgs e)
+        {
+            // Chuyển thành TitleCase
+            // Cách 1:
+            //textBoxName.Text = CultureInfo.InvariantCulture.TextInfo.ToTitleCase(textBoxName.Text.ToLower());
+
+            // Cách 2:
+            textBoxName.Text = string.Join(" ", textBoxName.Text.ToLower().Split(' ').Select(x => x.Substring(0, 1).ToUpper() + x.Substring(1).ToLower()).ToArray());
         }
     }
 }

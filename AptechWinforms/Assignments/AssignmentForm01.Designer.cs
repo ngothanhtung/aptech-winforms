@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.buttonSubmit = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -97,12 +97,13 @@
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(129, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(269, 21);
-            this.textBox1.TabIndex = 0;
+            this.textBoxName.Location = new System.Drawing.Point(129, 75);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(269, 21);
+            this.textBoxName.TabIndex = 0;
+            this.textBoxName.Leave += new System.EventHandler(this.textBoxName_Leave);
             // 
             // maskedTextBox1
             // 
@@ -332,7 +333,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.label2);
@@ -354,7 +355,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.Button buttonExit;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;

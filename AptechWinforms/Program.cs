@@ -17,7 +17,7 @@ namespace AptechWinforms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AssignmentForm03());
+            Application.Run(new AssignmentForm01());
         }
     }
 }
