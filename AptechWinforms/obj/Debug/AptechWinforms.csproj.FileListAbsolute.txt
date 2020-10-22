@@ -33,3 +33,12 @@ C:\Users\Tungn\Downloads\aptech-winforms-master\aptech-winforms-master\AptechWin
 C:\Users\Tungn\Downloads\aptech-winforms-master\aptech-winforms-master\AptechWinforms\obj\Debug\AptechWinforms.pdb
 C:\Users\Tungn\Downloads\aptech-winforms-master\aptech-winforms-master\AptechWinforms\obj\Debug\AptechWinforms.Form3.resources
 C:\Users\Tungn\Downloads\aptech-winforms-master\aptech-winforms-master\AptechWinforms\obj\Debug\AptechWinforms.Form4.resources
+D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.Assignments.AssignmentForm01.resources
+D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.Form2.resources
+D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.Form3.resources
+D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.Form4.resources
+D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.Assignments.AssignmentForm02.resources
+D:\Working\GitHub\aptech-winforms\AptechWinforms\bin\Debug\Assignments\Pictures\1.jpg
+D:\Working\GitHub\aptech-winforms\AptechWinforms\bin\Debug\Assignments\Pictures\2.jpg
+D:\Working\GitHub\aptech-winforms\AptechWinforms\bin\Debug\Assignments\Pictures\3.jpg
+D:\Working\GitHub\aptech-winforms\AptechWinforms\obj\Debug\AptechWinforms.Assignments.AssignmentForm03.resources
