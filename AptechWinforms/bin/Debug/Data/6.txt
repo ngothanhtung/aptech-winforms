@@ -1,3 +1,0 @@
-﻿FillInTheBlank
-C# viết tắt cho cụm từ nào?
-CSharp

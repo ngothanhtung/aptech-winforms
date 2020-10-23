@@ -1,7 +1,0 @@
-﻿OneChoice
-Tên của giáo viên đang dạy môn C# là gì?
-Ngô Thanh Tùng
-Nguyễn Khánh
-Trần Văn Nam
-Nguyễn Minh Đạt
-A
