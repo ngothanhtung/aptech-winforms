@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Dapper.2.0.35\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADOForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADOForm.Designer.cs">
+      <DependentUpon>ADOForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Assignments\AssignmentForm03.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +77,10 @@
     <Compile Include="Components\FillInTheBlankQuestion.cs" />
     <Compile Include="Components\OneChoiceQuestion.cs" />
     <Compile Include="Components\Question.cs" />
+    <Compile Include="DapperForm.cs" />
+    <Compile Include="DapperForm.Designer.cs">
+      <DependentUpon>DapperForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,8 +111,23 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMDIForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMDIForm.Designer.cs">
+      <DependentUpon>MainMDIForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ADOForm.resx">
+      <DependentUpon>ADOForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Assignments\AssignmentForm03.resx">
       <DependentUpon>AssignmentForm03.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Assignments\AssignmentForm02.resx">
       <DependentUpon>AssignmentForm02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DapperForm.resx">
+      <DependentUpon>DapperForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -124,6 +155,12 @@
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMDIForm.resx">
+      <DependentUpon>MainMDIForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -132,7 +169,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -176,6 +215,7 @@
     <Content Include="Data\5.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\folder-open-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
