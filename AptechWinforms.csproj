@@ -77,9 +77,23 @@
     <Compile Include="Components\FillInTheBlankQuestion.cs" />
     <Compile Include="Components\OneChoiceQuestion.cs" />
     <Compile Include="Components\Question.cs" />
-    <Compile Include="DapperForm.cs" />
+    <Compile Include="DapperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DapperForm.Designer.cs">
       <DependentUpon>DapperForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAdapterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataAdapterForm.Designer.cs">
+      <DependentUpon>DataAdapterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBinding\DataBindingForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBinding\DataBindingForm1.Designer.cs">
+      <DependentUpon>DataBindingForm1.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -123,6 +137,11 @@
     <Compile Include="MainMDIForm.Designer.cs">
       <DependentUpon>MainMDIForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="OnlineShopDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnlineShopDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ADOForm.resx">
@@ -139,6 +158,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DapperForm.resx">
       <DependentUpon>DapperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataAdapterForm.resx">
+      <DependentUpon>DataAdapterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBinding\DataBindingForm1.resx">
+      <DependentUpon>DataBindingForm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -171,6 +196,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="OnlineShopDataSet.xsc">
+      <DependentUpon>OnlineShopDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OnlineShopDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OnlineShopDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OnlineShopDataSet.xss">
+      <DependentUpon>OnlineShopDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

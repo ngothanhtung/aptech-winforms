@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AptechWinforms.Assignments;
+using AptechWinforms.DataBinding;
 
 namespace AptechWinforms
 {
@@ -17,7 +18,7 @@ namespace AptechWinforms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DapperForm());
+            Application.Run(new DataAdapterForm());
         }
     }
 }
