@@ -32,5 +32,16 @@ namespace AptechWinforms.Properties {
                 return ((string)(this["OnlineShopConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=OnlineShop;Persist Security Info=True;User " +
+            "ID=dev;Password=123456789")]
+        public string OnlineShopConnectionString1 {
+            get {
+                return ((string)(this["OnlineShopConnectionString1"]));
+            }
+        }
     }
 }

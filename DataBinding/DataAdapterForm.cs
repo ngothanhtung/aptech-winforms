@@ -60,10 +60,10 @@ namespace AptechWinforms.DataBinding
             // --------------------------------------------------------------------------------------------------------
             // --------------------------------------------------------------------------------------------------------
             // Add a row /  record
-            //var row = ds.Tables[0].NewRow();
+            //var row = this._ds.Tables[0].NewRow();            
             //row["Name"] = "New Cate" + DateTime.Now;
             //row["Description"] = "New Desc";
-            //ds.Tables[0].Rows.Add(row);
+            //this._ds.Tables[0].Rows.Add(row);
 
             // Update
             var editRow = this._ds.Tables[0].Rows.Find(14);
