@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Dapper;
 
-namespace AptechWinforms
+namespace AptechWinforms.DapperExamples
 {
 
     public partial class DapperForm : Form

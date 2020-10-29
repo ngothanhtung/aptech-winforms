@@ -1,6 +1,6 @@
-﻿namespace AptechWinforms
+﻿namespace AptechWinforms.DapperExamples
 {
-    partial class DataAdapterForm
+    partial class DapperForm
     {
         /// <summary>
         /// Required designer variable.
@@ -41,14 +41,14 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // DataAdapterForm
+            // DapperForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Name = "DataAdapterForm";
-            this.Text = "DataAdapterForm";
+            this.Name = "DapperForm";
+            this.Text = "DapperForm";
             this.ResumeLayout(false);
 
         }

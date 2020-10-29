@@ -32,5 +32,12 @@ namespace AptechWinforms.DataBinding
         {
             
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Add new row
+            this.onlineShopDataSet.Categories.AddCategoriesRow("New Name", "New Description");
+            this.categoriesTableAdapter.Update(this.onlineShopDataSet.Categories);
+        }
     }
 }

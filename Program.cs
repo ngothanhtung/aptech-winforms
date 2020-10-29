@@ -19,6 +19,7 @@ namespace AptechWinforms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new DataAdapterForm());
+            //Application.Run(new DataBindingForm1());
         }
     }
 }
