@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AptechWinforms.CR {
+namespace AptechWinforms.Reports {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace AptechWinforms.CR {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class GroupCrystalReport : ReportClass {
+    public class GroupByReport : ReportClass {
         
-        public GroupCrystalReport() {
+        public GroupByReport() {
         }
         
         public override string ResourceName {
             get {
-                return "GroupCrystalReport.rpt";
+                return "GroupByReport.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace AptechWinforms.CR {
         
         public override string FullResourceName {
             get {
-                return "AptechWinforms.CR.GroupCrystalReport.rpt";
+                return "AptechWinforms.Reports.GroupByReport.rpt";
             }
             set {
                 // Do nothing
@@ -106,7 +106,7 @@ namespace AptechWinforms.CR {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_CompanyName {
+        public CrystalDecisions.Shared.IParameterField Parameter_CategoryId {
             get {
                 return this.DataDefinition.ParameterFields[0];
             }
@@ -114,9 +114,9 @@ namespace AptechWinforms.CR {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedGroupCrystalReport : Component, ICachedReport {
+    public class CachedGroupByReport : Component, ICachedReport {
         
-        public CachedGroupCrystalReport() {
+        public CachedGroupByReport() {
         }
         
         [Browsable(false)]
@@ -153,7 +153,7 @@ namespace AptechWinforms.CR {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            GroupCrystalReport rpt = new GroupCrystalReport();
+            GroupByReport rpt = new GroupByReport();
             rpt.Site = this.Site;
             return rpt;
         }

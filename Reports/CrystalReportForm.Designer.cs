@@ -1,6 +1,6 @@
-﻿namespace AptechWinforms.CR
+﻿namespace AptechWinforms.Reports
 {
-    partial class BasicForm
+    partial class CrystalReportForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,33 +29,40 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.ProductsReport1 = new AptechWinforms.Reports.ProductsReport();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
             // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.ActiveViewIndex = 0;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(2);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.crystalReportViewer1.ReportSource = this.ProductsReport1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(752, 510);
             this.crystalReportViewer1.TabIndex = 0;
+            this.crystalReportViewer1.ToolPanelWidth = 100;
             // 
-            // BasicForm
+            // CrystalReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(752, 510);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "BasicForm";
-            this.Text = "BasicForm";
-            this.Load += new System.EventHandler(this.BasicForm_Load);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "CrystalReportForm";
+            this.Text = "CrystalReportForm";
+            this.Load += new System.EventHandler(this.CrystalReportForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private ProductsReport ProductsReport1;
     }
 }

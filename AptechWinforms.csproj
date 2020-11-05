@@ -96,32 +96,6 @@
     <Compile Include="Components\FillInTheBlankQuestion.cs" />
     <Compile Include="Components\OneChoiceQuestion.cs" />
     <Compile Include="Components\Question.cs" />
-    <Compile Include="CR\BasicCrystalReport.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BasicCrystalReport.rpt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="CR\GroupForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CR\GroupForm.Designer.cs">
-      <DependentUpon>GroupForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CR\BasicForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CR\BasicForm.Designer.cs">
-      <DependentUpon>BasicForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CR\GroupCrystalReport.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GroupCrystalReport.rpt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Customer.cs">
       <DependentUpon>OnlineShopModel.tt</DependentUpon>
     </Compile>
@@ -231,6 +205,45 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\CrystalReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReportForm.Designer.cs">
+      <DependentUpon>CrystalReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GroupByCrystalReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\GroupByCrystalReportForm.Designer.cs">
+      <DependentUpon>GroupByCrystalReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GroupByReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\GroupByReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GroupByReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ProductsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ProductsReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\StoredProcedureReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\StoredProcedureReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoredProcedureReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Supplier.cs">
       <DependentUpon>OnlineShopModel.tt</DependentUpon>
     </Compile>
@@ -245,22 +258,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Assignments\AssignmentForm02.resx">
       <DependentUpon>AssignmentForm02.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CR\GroupForm.resx">
-      <DependentUpon>GroupForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CR\GroupCrystalReport.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>GroupCrystalReport.cs</LastGenOutput>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CR\BasicCrystalReport.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>BasicCrystalReport.cs</LastGenOutput>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CR\BasicForm.resx">
-      <DependentUpon>BasicForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DapperExamples\DapperForm.resx">
       <DependentUpon>DapperForm.cs</DependentUpon>
@@ -308,6 +305,24 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reports\CrystalReportForm.resx">
+      <DependentUpon>CrystalReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GroupByCrystalReportForm.resx">
+      <DependentUpon>GroupByCrystalReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GroupByReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>GroupByReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProductsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductsReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\StoredProcedureReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoredProcedureReport1.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="OnlineShopDataSet.xsc">
       <DependentUpon>OnlineShopDataSet.xsd</DependentUpon>
     </None>

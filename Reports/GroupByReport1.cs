@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AptechWinforms.CR {
+namespace AptechWinforms.Reports {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace AptechWinforms.CR {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class BasicCrystalReport : ReportClass {
+    public class GroupByReport : ReportClass {
         
-        public BasicCrystalReport() {
+        public GroupByReport() {
         }
         
         public override string ResourceName {
             get {
-                return "BasicCrystalReport.rpt";
+                return "GroupByReport.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace AptechWinforms.CR {
         
         public override string FullResourceName {
             get {
-                return "AptechWinforms.CR.BasicCrystalReport.rpt";
+                return "AptechWinforms.Reports.GroupByReport.rpt";
             }
             set {
                 // Do nothing
@@ -66,7 +66,7 @@ namespace AptechWinforms.CR {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupHeaderSection1 {
             get {
                 return this.ReportDefinition.Sections[2];
             }
@@ -74,7 +74,7 @@ namespace AptechWinforms.CR {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,7 +82,7 @@ namespace AptechWinforms.CR {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
             get {
                 return this.ReportDefinition.Sections[4];
             }
@@ -90,7 +90,23 @@ namespace AptechWinforms.CR {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_CompanyName {
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+            get {
+                return this.ReportDefinition.Sections[5];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+            get {
+                return this.ReportDefinition.Sections[6];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_CategoryId {
             get {
                 return this.DataDefinition.ParameterFields[0];
             }
@@ -98,9 +114,9 @@ namespace AptechWinforms.CR {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedBasicCrystalReport : Component, ICachedReport {
+    public class CachedGroupByReport : Component, ICachedReport {
         
-        public CachedBasicCrystalReport() {
+        public CachedGroupByReport() {
         }
         
         [Browsable(false)]
@@ -137,7 +153,7 @@ namespace AptechWinforms.CR {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            BasicCrystalReport rpt = new BasicCrystalReport();
+            GroupByReport rpt = new GroupByReport();
             rpt.Site = this.Site;
             return rpt;
         }
