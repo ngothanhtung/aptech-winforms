@@ -50,5 +50,16 @@ namespace AptechWinforms
 
             this.db.SaveChanges();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var categories1 = from c in db.Categories
+                              orderby c.Name
+                              select c;
+            var result = categories1.ToList();
+
+
+            var categories2 = db.Categories.OrderBy(c => c.Name).ToList();
+        }
     }
 }
