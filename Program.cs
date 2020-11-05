@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AptechWinforms.Assignments;
+using AptechWinforms.CR;
 using AptechWinforms.DataBinding;
 
 namespace AptechWinforms
@@ -18,8 +19,9 @@ namespace AptechWinforms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LinqForm());
+            //Application.Run(new LinqForm());
             //Application.Run(new DataBindingForm1());
+            Application.Run(new BasicForm());
         }
     }
 }
